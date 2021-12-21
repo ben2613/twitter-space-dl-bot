@@ -10,9 +10,9 @@ RUN wget -O - https://github.com/prasmussen/gdrive/releases/download/2.1.1/gdriv
   | tar -zx -C /usr/local/bin -f -
 RUN apk add inotify-tools
 ENV GDRIVE_CONFIG_DIR=/gdrive
-COPY down_up.sh monitor_file.sh run.sh /gdrive/
+COPY download.sh monitor_file.sh run.sh /gdrive/
 
 WORKDIR /gdrive
-RUN chmod +x down_up.sh monitor_file.sh run.sh
-ENTRYPOINT [ "/bin/sh" ]
-# ENTRYPOINT [ "/gdrive/run.sh" ]
+RUN chmod +x download.sh monitor_file.sh run.sh
+# ENTRYPOINT [ "/bin/sh" ]
+ENTRYPOINT [ "/gdrive/run.sh" ]
