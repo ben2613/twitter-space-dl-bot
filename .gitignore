@@ -1,0 +1,3 @@
+# to prevent I accidentally upload my credential
+/*.json
+!gdrive_cred.sample.json
