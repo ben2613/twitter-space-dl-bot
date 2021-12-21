@@ -30,6 +30,7 @@ do
   for u in $(echo $USER_LIST | sed "s/,/ /g")
   do
     ./download.sh $u &
+    sleep 5
   done
-  sleep 15
+  sleep 60
 done
