@@ -15,4 +15,4 @@ COPY download.sh monitor_file.sh run.sh /gdrive/
 WORKDIR /gdrive
 RUN chmod +x download.sh monitor_file.sh run.sh
 # remove entrypoint from ffmpeg
-ENTRYPOINT [ "/gdrive/run.sh" ]
+ENTRYPOINT []
