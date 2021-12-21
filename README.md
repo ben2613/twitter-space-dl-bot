@@ -11,4 +11,6 @@ Required Environment Variable
 - `USER_LIST`: comma-separated list without space of twitter user ids to monitor
 - e.g. `USER_LIST=user1,user2,user3`
 
-Run `docker run -it --rm -e 'GDRIVE_UPLOAD_DEST_ID=<<folder id>>' -e 'USER_LIST=<<user_ids>>' -v <<path_to_gdrive_cred.json>>:/gdrive/gdrive_cred.json twitterspacedlbot`
+Run `docker run -it --rm -e 'GDRIVE_UPLOAD_DEST_ID=<<folder id>>' -e 'USER_LIST=<<user_ids>>' -v <<path_to_gdrive_cred.json>>:/gdrive/gdrive_cred.json twitter-space-dl-bot`
+or if volume is not avaiable
+`CERT=$(cat <<path_to_gdrive_cred>>) && docker run -it --rm -e "CERT=$CERT" -e 'GDRIVE_UPLOAD_DEST_ID=<<folder id>>' -e 'USER_LIST=<<user_ids>>' twitter-space-dl-bot`
