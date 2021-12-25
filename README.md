@@ -1,3 +1,5 @@
+This just combines Ryu1845/twspace-dl  and  prasmussen / gdrive into one to let me check downloaded file on my phone.
+
 ## Preparation
 
 - Go https://console.cloud.google.com/iam-admin/serviceaccounts/ to create your project and service account
