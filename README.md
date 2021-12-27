@@ -1,3 +1,6 @@
+# Deprecated
+In order to get more functionality I want I am rewriting this in ...maybe node? 
+
 This is just a script containing [Ryu1845/twspace-dl](https://github.com/Ryu1845/twspace-dl) and [prasmussen/gdrive](https://github.com/prasmussen/gdrive) to let me check downloaded space files on my phone.
 
 ## Preparation
